@@ -1,0 +1,7 @@
+{
+  "name": "logRegApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
