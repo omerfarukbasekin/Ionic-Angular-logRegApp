@@ -24,3 +24,35 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.socialButtons {
+    width: 170px;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.socialButtons ion-icon{
+    width: 40px;
+    height: 40px;
+}
+.subButton {
+    width: 350px;
+    margin-left: auto ;
+    margin-right: auto ;
+    
+}
+.subInfo {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    color: grey;
+    margin-top: 10%;
+}
+.subForm {
+    height: 55px; 
+    padding-left: 10px !important; 
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

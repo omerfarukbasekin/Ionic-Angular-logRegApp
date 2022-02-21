@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content>
+
+<div class="container">
+<ion-item lines="none" style="margin-top: 15%; margin-left: -20px;">
+  <div id="container">
+    
+    <strong>Sign Up</strong>
+    <p>Please sign up to continue using our app.</p>
+  
+  </div></ion-item></div>
+
+
+  <div class="container">
+    <ion-item lines="none">
+      <p class="subInfo">Enter via social networks</p>
+      
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button class="socialButtons" color="secondary" size="large" expand="full"><ion-icon name="logo-twitter"></ion-icon></ion-button>
+      <ion-button class="socialButtons" color="tertiary" size="large" expand="full"><ion-icon name="logo-facebook"></ion-icon></ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      <p class="subInfo">or sign up with email</p>
+    </ion-item>
+
+    <form [formGroup]="formData" (ngSubmit)="onSubmit()" action="">
+      <ion-list>
+    <ion-item lines="none">
+      
+      <ion-input class="subForm" type="email" formControlName="mail" placeholder="Email"></ion-input>
+    
+    </ion-item>
+    <ion-item lines="none">
+      
+      <ion-input class="subForm" type="password" formControlName="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-checkbox class="sasa" formControlName="agreementBox" ></ion-checkbox><label>I agree with Private Policy</label>
+      </ion-item>
+    </ion-list>
+
+      <ion-button type="submit" class="subButton" color="primary" size="large" expand="full" >Sign Up</ion-button>
+    
+  </form>
+    <ion-item lines="none">
+      <p class="subInfo">Already have an account ?<ion-button (click)="sentLoginPage()" fill="clear" style="margin-top: -5px;" >Login</ion-button></p>
+    </ion-item>
+
+  </div>
+  
+
+  
+
+</ion-content>
+

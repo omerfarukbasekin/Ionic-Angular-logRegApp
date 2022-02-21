@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content>
+
+<div class="container">
+<ion-item lines="none" style="margin-top: 15%; margin-left: -20px;">
+  <div id="container">
+    
+    <strong>Login Now</strong>
+    <p>Please login to continue using our app.</p>
+  
+  </div></ion-item></div>
+
+
+  <div class="container">
+    <ion-item lines="none">
+      <p class="subInfo">Enter via social networks</p>
+      
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button class="socialButtons" color="secondary" size="large" expand="full"><ion-icon name="logo-twitter"></ion-icon></ion-button>
+      <ion-button class="socialButtons" color="tertiary" size="large" expand="full"><ion-icon name="logo-facebook"></ion-icon></ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      <p class="subInfo">or login with email</p>
+    </ion-item>
+    <form [formGroup]="formLogData" (ngSubmit)="onSubmit()" action="">
+    <ion-list>
+    <ion-item lines="none">
+      
+      <ion-input formControlName="mail" class="subForm" type="email" placeholder="Email"></ion-input>
+    
+    </ion-item>
+    <ion-item lines="none">
+      
+      <ion-input formControlName="password" class="subForm" type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-checkbox formControlName="rememberBox"></ion-checkbox><label >Remember me</label>
+      </ion-item>
+      </ion-list>
+      <ion-item lines="none" class="remBut"><a style=" margin-right: 1px; margin-left: auto;" (click)="forgotPas()">Forgot password?</a>
+      </ion-item>
+
+    <ion-item lines="none">
+      <ion-button type="submit" class="subButton" color="primary" size="large" expand="full" >Login</ion-button>
+    </ion-item>
+  </form>
+
+
+    <ion-item lines="none">
+      <p class="subInfo">Don't have an account ?<ion-button (click)="sentSignPage()" fill="clear" style="margin-top: -5px;" >Sign Up</ion-button></p>
+    </ion-item>
+
+  </div>
+  
+</ion-content>

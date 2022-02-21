@@ -1,20 +1,43 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
 
+<div class="container">
+<ion-item lines="none" style="margin-top: 7%; margin-left: -20px;">
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    
+    <strong>Welcome</strong>
+    <p>Please login or sign up to continue using our app.</p>
+  
+  </div></ion-item></div>
+
+  <img class="helloImg" src="assets/Hello.png" alt="image">
+
+  <div class="container">
+    <ion-item lines="none">
+      <p class="subInfo">Enter via social networks</p>
+      
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button class="socialButtons" color="secondary" size="large" expand="full"><ion-icon name="logo-twitter"></ion-icon></ion-button>
+      <ion-button class="socialButtons" color="tertiary" size="large" expand="full"><ion-icon name="logo-facebook"></ion-icon></ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      <p class="subInfo">or login with email</p>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button class="subButton" color="primary" size="large" expand="full" (click)="sentSignPage()">Sing Up</ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      <p class="subInfo">Don't have an account ?<ion-button (click)="sentLoginPage()" fill="clear" style="margin-top: -5px;" >Login</ion-button></p>
+    </ion-item>
+
   </div>
+  
 </ion-content>
