@@ -39,13 +39,23 @@
       
       <ion-input formControlName="password" class="subForm" type="password" placeholder="Password"></ion-input>
     </ion-item>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-item lines="none">
+          <ion-checkbox formControlName="rememberBox"></ion-checkbox><label >Remember me</label>
+        </ion-item>
+    </ion-col>
+    <ion-col>
+        <ion-item lines="none" class="remBut">
+          <a style=" margin-right: 1px; margin-left: auto;" (click)="forgotPas()">Forgot password?</a>
+        </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+    
 
-    <ion-item lines="none">
-      <ion-checkbox formControlName="rememberBox"></ion-checkbox><label >Remember me</label>
-      </ion-item>
-      </ion-list>
-      <ion-item lines="none" class="remBut"><a style=" margin-right: 1px; margin-left: auto;" (click)="forgotPas()">Forgot password?</a>
-      </ion-item>
+    </ion-list>
 
     <ion-item lines="none">
       <ion-button type="submit" class="subButton" color="primary" size="large" expand="full" >Login</ion-button>

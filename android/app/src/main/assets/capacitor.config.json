@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "logRegApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -40,22 +40,24 @@
       
       <ion-input class="subForm" type="password" formControlName="password" placeholder="Password"></ion-input>
     </ion-item>
-
-    <ion-item lines="none">
-      <ion-checkbox class="sasa" formControlName="agreementBox" ></ion-checkbox><label>I agree with Private Policy</label>
-      </ion-item>
+    <ion-grid>
+      <ion-item lines="none">
+        <ion-checkbox class="sasa" formControlName="agreementBox" ></ion-checkbox><label>I agree with Private Policy</label>
+        </ion-item>
+    </ion-grid>
+    
     </ion-list>
 
       <ion-button type="submit" class="subButton" color="primary" size="large" expand="full" >Sign Up</ion-button>
     
   </form>
+ 
     <ion-item lines="none">
       <p class="subInfo">Already have an account ?<ion-button (click)="sentLoginPage()" fill="clear" style="margin-top: -5px;" >Login</ion-button></p>
     </ion-item>
 
   </div>
-  
-
+ 
   
 
 </ion-content>
