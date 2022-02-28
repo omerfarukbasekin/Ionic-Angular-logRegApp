@@ -14,17 +14,19 @@ export class SignUpPage implements OnInit {
 
   constructor(private router: Router) { }
 
-
   ngOnInit() {
     this.formData = new FormGroup({
       mail: new FormControl(),
       password: new FormControl(),
       agreementBox: new FormControl()
     });
+
+
   }
 
   onSubmit(){
     console.log(this.formData.value);
+    this.router.navigate(["/confirmation"]);
   }
 
   sentLoginPage(){

@@ -24,6 +24,7 @@ export class LoginPage implements OnInit {
 
   onSubmit(){
     console.log(this.formLogData.value);
+    this.router.navigate(["/confirmation"]);
   }
   forgotPas(){
     console.log("new password function");
