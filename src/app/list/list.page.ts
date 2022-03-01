@@ -18,6 +18,10 @@ results: any;
       this.results = json;
     });
   }
+  backPagaFunc(){
+    console.log("sending to home page");
+    this.router.navigate(["/home"]);
+  }
  
 
 }

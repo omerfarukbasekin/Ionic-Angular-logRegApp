@@ -1,12 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>State Management for Ionic</ion-title>
+    <ion-item lines="none">
+      <ion-icon name="arrow-undo-circle-outline" (click)="backPagaFunc()"></ion-icon>
+      <ion-title>State Management</ion-title>
+    </ion-item>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-  <ion-card *ngFor="let item of results" >
+<div  *ngFor="let item of results">
+  <ion-card class="{{item.ozo}}" >
     <img src="{{item.img}}" alt="" class="{{item.oz}}">
     <ion-card-header>
       <ion-card-subtitle>{{item.subTitle}}</ion-card-subtitle>
@@ -18,8 +22,7 @@
       <a href="{{item.docUrl}}">Online Doc</a>
     </ion-card-content>
   </ion-card>
-
-
+</div>
   <!-- <ion-card>
     <img src="/assets/ionic-storage-crud.png" alt="">
     <ion-card-header>

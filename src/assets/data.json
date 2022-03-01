@@ -5,7 +5,8 @@
         "subTitle":"Ionic Enterprise",
         "info":"Open source SQLlite Storage API, Ionic Secure Storage.",
         "docUrl":"https://ionic.io/enterprise-guide/data-storage#ionic-storage",
-        "oz":""
+        "oz":"",
+        "ozo":""
     },
     {
         "img":"/assets/ngrx.png",
@@ -13,7 +14,8 @@
         "subTitle":"REDUX + RXJS + Angular",
         "info":" NgRx is a framework for building reactive applications in Angular. Store is RxJS powered global state management for Angular applications, inspired by Redux.",
         "docUrl":"https://ngrx.io/docs",
-        "oz":""
+        "oz":"",
+        "ozo":"selectedCard"
     },
     {
         "img":"/assets/Rx_Logo.png",
@@ -21,7 +23,8 @@
         "subTitle":"Observable, satellite types",
         "info":"RxJS is a library for composing asynchronous and event-based programs by using observable sequences.",
         "docUrl":"https://rxjs.dev/guide/overview",
-        "oz":"name"
+        "oz":"name",
+        "ozo":""
     },
     {
         "img":"/assets/akita.svg",
@@ -29,6 +32,7 @@
         "subTitle":"A Reactive State Management Tailor-Made for JS Applications",
         "info":" state management pattern, built on top of RxJS, from Flux, updates from Redux. Observable Data Store model.",
         "docUrl":"https://datorama.github.io/akita/docs/angular/schematics",
-        "oz":"name"
+        "oz":"name",
+        "ozo":""
     }
 ]
