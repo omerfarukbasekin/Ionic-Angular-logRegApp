@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>State Management for Ionic</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let item of results" >
+    <img src="{{item.img}}" alt="" class="{{item.oz}}">
+    <ion-card-header>
+      <ion-card-subtitle>{{item.subTitle}}</ion-card-subtitle>
+      <ion-card-title>{{item.title}}</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      {{item.info}}
+      <a href="{{item.docUrl}}">Online Doc</a>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- <ion-card>
+    <img src="/assets/ionic-storage-crud.png" alt="">
+    <ion-card-header>
+      <ion-card-subtitle>Ionic Enterprise</ion-card-subtitle>
+      <ion-card-title>Ionic Storage</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      Open source SQLlite Storage API, Ionic Secure Storage.
+      <a href="https://ionic.io/enterprise-guide/data-storage#ionic-storage">Online Doc</a>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="background-color:rgb(218, 241, 178)">
+    <img src="/assets/ngrx.png" alt="" style="display: flex; margin: auto;">
+    <ion-card-header>
+      <ion-card-subtitle>REDUX + RXJS + Angular</ion-card-subtitle>
+      <ion-card-title>NgRx</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      NgRx is a framework for building reactive applications in Angular.
+      Store is RxJS powered global state management for Angular applications, inspired by Redux.
+      <a href="https://ngrx.io/docs">Online Doc</a>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="/assets/Rx_Logo.png" alt="" style="width: 60%; height: 60%;display: flex; margin: auto;">
+    <ion-card-header>
+      <ion-card-subtitle>Observable, satellite types</ion-card-subtitle>
+      <ion-card-title>RxJs</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      RxJS is a library for composing asynchronous and event-based programs by using observable sequences.
+      <a href="https://rxjs.dev/guide/overview">Online Doc</a>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="/assets/akita.svg" alt="" style="width: 60%; height: 60%;display: flex; margin: auto;">
+    
+    <ion-card-header>
+      <ion-card-subtitle>A Reactive State Management Tailor-Made for JS Applications</ion-card-subtitle>
+      <ion-card-title>Akita</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      state management pattern, built on top of RxJS, from Flux, 
+      updates from Redux. Observable Data Store model.
+      <a href="https://datorama.github.io/akita/docs/angular/schematics">Online Doc</a>
+    </ion-card-content>
+  </ion-card> -->
+
+</ion-content>

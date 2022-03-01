@@ -17,4 +17,8 @@ export class ConfirmationPage implements OnInit {
     
     this.router.navigate(["/home"]);
   }
+  sendtoList(){
+    console.log("sending to list page");
+    this.router.navigate(["/list"]);
+  }
 }
