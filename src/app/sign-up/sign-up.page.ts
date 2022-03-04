@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MyService } from './my.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -12,7 +13,13 @@ export class SignUpPage implements OnInit {
 
   private formData: FormGroup;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+   
+/*     Try sent value between components/pages 
+    constructor => , private myService: MyService
+    this.myService.myMethod(this.data); */
+    
+   }
 
   ngOnInit() {
     this.formData = new FormGroup({
@@ -21,12 +28,16 @@ export class SignUpPage implements OnInit {
       agreementBox: new FormControl()
     });
 
+    
 
   }
+  data: String ="f";
 
   onSubmit(){
     console.log(this.formData.value);
-    this.router.navigate(["/confirmation"]);
+/*     Try sent value between components/pages
+    this.data = this.formData.value.mail; */
+    this.router.navigate(["/login"]);
   }
 
   sentLoginPage(){
